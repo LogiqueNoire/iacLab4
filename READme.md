@@ -13,7 +13,7 @@ Grupo 07
 4. José Saldaña Zumarán  
 5. Michael Velásquez Miranda  
 
-# 🛠Instrucciones
+# Instrucciones
 
 ### 1. Descarga el `.zip` y descomprímelo.  
 Luego, abre una terminal y navega a la carpeta del proyecto.
@@ -59,3 +59,5 @@ sudo docker inspect network <nombreRed>
 Abre tu navegador web y accede al servicio a través de `localhost` y el puerto correspondiente.
 
 Por ejemplo, ingresa:`http://localhost:8000/`
+
+Los servicios que se pueden acceder de esa forma son: los servicios de nginx (puertos: 8000, 9000, 10000) y el contenedor de grafana (puerto: 3001)
