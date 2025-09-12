@@ -4,7 +4,7 @@ resource "docker_network" "persistencenet" {
 
 resource "docker_container" "redis_dev" {
   name  = "redis"
-  image = "redis:latest"
+  image = "redis:8.2.1"
 
   ports {
     internal = 6379
