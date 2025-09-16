@@ -52,7 +52,7 @@ sudo docker ps
 Para verificar la configuración y los contenedores conectados a una red (grafananet, appnet, persistencenet), utiliza el comando:
 
 ```bash
-sudo docker inspect network <nombreRed>
+sudo docker network inspect <nombreRed>
 ```
 ### 7. Verifica que los servicios estén accesibles mediante su puerto asignado
 
