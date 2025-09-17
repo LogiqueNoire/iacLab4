@@ -1,10 +1,9 @@
-# Anible + Terraform
+# Ansible + Terraform
 Grupo 07
 
 ## Infraestructura solicitada
 
-<img width="1241" height="691" alt="image" src="<img width="733" height="629" alt="image-3" src="https://github.com/user-attachments/assets/16667041-38f0-4800-a364-a682a9e11d12" />
-" />
+<img width="733" height="629" alt="image-3" src="https://github.com/user-attachments/assets/16667041-38f0-4800-a364-a682a9e11d12" />
 
 ## Integrantes:
 
