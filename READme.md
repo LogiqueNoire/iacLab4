@@ -1,9 +1,10 @@
-# Primeros pasos en Terraform  
+# Anible + Terraform
 Grupo 07
 
 ## Infraestructura solicitada
 
-<img width="1241" height="691" alt="image" src="https://github.com/user-attachments/assets/6fd4003f-fe07-4a4d-b2d3-cedee624e9b2" />
+<img width="1241" height="691" alt="image" src="<img width="733" height="629" alt="image-3" src="https://github.com/user-attachments/assets/16667041-38f0-4800-a364-a682a9e11d12" />
+" />
 
 ## Integrantes:
 
