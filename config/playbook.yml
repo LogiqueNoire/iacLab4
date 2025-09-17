@@ -16,6 +16,9 @@
       loop:
         - '{{nginx_conf_host}}'
         - '{{web_root_host}}'
+        - '{{web_root_host}}/app1'
+        - '{{web_root_host}}/app2'
+        - '{{web_root_host}}/app3'
     - name: Copiar index1.html
       ansible.builtin.copy:
         src: "files/index1.html"
