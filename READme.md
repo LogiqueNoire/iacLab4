@@ -40,24 +40,17 @@ Este comando aplica la configuración escrita en los archivos `.tf` y crea la in
 sudo terraform apply
 ```
 
-### 5. Lista los contenedores Docker en ejecución actualmente
+### 5. Ejecutar configuración de ansible
 
-Una vez aplicada la infraestructura con Terraform, puedes verificar qué contenedores están corriendo usando:
-
-```bash
-sudo docker ps
-```
-### 6. Inspecciona alguna de las redes Docker creadas
-
-Para verificar la configuración y los contenedores conectados a una red (grafananet, appnet, persistencenet), utiliza el comando:
+Una vez aplicada la infraestructura con Terraform, procedemos a ejecutar el siguiente comando para aplicar la configuración de ansible:
 
 ```bash
-sudo docker network inspect <nombreRed>
+sudo ansible-playbook -i inventory.ini playbook.yml
 ```
-### 7. Verifica que los servicios estén accesibles mediante su puerto asignado
 
-Abre tu navegador web y accede al servicio a través de `localhost` y el puerto correspondiente.
+### 6. Verifica que los servicios estén accesibles
 
-Por ejemplo, ingresa:`http://localhost:8000/`
+Abre tu navegador web y accede al servicio a través de `localhost`.
 
-Los servicios que se pueden acceder de esa forma son: los servicios de nginx (puertos: 8000, 9000, 10000) y el contenedor de grafana (puerto: 3001)
+Por ejemplo, ingresa:`http://localhost/api`
+
