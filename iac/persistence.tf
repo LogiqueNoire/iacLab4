@@ -4,7 +4,7 @@ resource "docker_network" "persistence_net" {
 
 resource "docker_container" "postgre-dev" {
   name  = "postgre-dev"
-  image = "postgres:latest"
+  image = "postgres:13"
   ports {
     internal = 5432
     external = var.postgres_port
