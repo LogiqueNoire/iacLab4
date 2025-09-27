@@ -4,7 +4,7 @@ resource "docker_network" "app_net" {
 
 resource "docker_container" "app1" {
   name  = "app1"
-  image = "nginx:stable"
+  image = "nginx:stable-perl"
   networks_advanced {
     name = docker_network.app_net.name
   }
@@ -19,7 +19,7 @@ resource "docker_container" "app1" {
 
 resource "docker_container" "app2" {
   name  = "app2"
-  image = "nginx:stable"
+  image = "nginx:stable-perl"
   networks_advanced {
     name = docker_network.app_net.name
   }
@@ -34,7 +34,7 @@ resource "docker_container" "app2" {
 
 resource "docker_container" "app3" {
   name  = "app3"
-  image = "nginx:stable"
+  image = "nginx:stable-perl"
   networks_advanced {
     name = docker_network.app_net.name
   }
