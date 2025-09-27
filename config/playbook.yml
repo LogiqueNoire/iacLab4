@@ -6,6 +6,9 @@
     project_root: "{{playbook_dir}}/.."
     nginx_conf_host: "{{project_root}}/host_volumes/nginx_conf"
     web_root_host: "{{project_root}}/host_volumes/web"
+    app1_host: "{{web_root_host}}/app1"
+    app2_host: "{{web_root_host}}/app2"
+    app3_host: "{{web_root_host}}/app3"
     nginx_container: 'nginx_proxy'
   tasks:
     - name: Crear directorios
@@ -22,17 +25,17 @@
     - name: Copiar index1.html
       ansible.builtin.copy:
         src: "files/index1.html"
-        dest: "{{ web_root_host }}/app1/index.html"
+        dest: "{{ app1_host }}/index.html"
         mode: '0644'
     - name: Copiar index2.html
       ansible.builtin.copy:
         src: "files/index2.html"
-        dest: "{{ web_root_host }}/app2/index.html"
+        dest: "{{ app2_host }}/index.html"
         mode: '0644'
     - name: Copiar index3.html
       ansible.builtin.copy:
         src: "files/index3.html"
-        dest: "{{ web_root_host }}/app3/index.html"
+        dest: "{{ app3_host }}/index.html"
         mode: '0644'
     - name: Copiar la api
       ansible.builtin.copy:
